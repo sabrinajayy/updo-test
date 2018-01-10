@@ -1,0 +1,33 @@
+.btn {
+  color: white;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  border-width: 0;
+  height: 50px;
+
+}
+
+.btn:hover {
+  opacity: 1;
+  background: #212121;
+  border-width: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-pink { background: #ff8791; }
+
+.btn-green { background: #32B796; }
+
+.btn-red { background: #ce0000; }
+
+.btn-blue { background: #469AE0; }
+
+.btn-grey { background: #757575; }
+
+
+

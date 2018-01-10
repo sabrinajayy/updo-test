@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './components/button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <h1>This is the Updo test</h1>
-        <button className="btn btn-primary">Test button</button>
+        <Button text="testing" color="green" />
       </div>
     );
   }
