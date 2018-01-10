@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div>
         <h1>This is the Updo test</h1>
+        <button className="btn btn-primary">Test button</button>
       </div>
     );
   }
