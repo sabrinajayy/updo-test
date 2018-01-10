@@ -3,18 +3,54 @@ import PropTypes from 'prop-types';
 import '../css/icon.css';
 
 class Icon extends Component {
+  renderIcon = () => {
+    const size = this.props.size;
+    const type = this.props.type;
+
+    const iconTypes = {
+      "envelope": "envelope-o",
+      "bell": "bell",
+      "pencil": "pencil",
+      "settings": "cog",
+      "user": "user",
+      "star": "star",
+      "empty-star": "star-o",
+      "half-star": "half-star-o",
+      "marker": "map-marker",
+      "calendar": "calendar",
+      "dollar": "usd",
+      "facebook": "facebook-official",
+      "instagram": "instagram",
+      "twitter": "twitter",
+      "youtube": "youtube",
+      "pinterest": "pinterest",
+      "google-plus": "google-plus-official",
+      "linkedin": "linkedin-square",
+      "verified": "check-circle",
+      "not-verified": "check-circle-co"
+    }
+
+    const iconSizes = {
+      "small": "fa-lg",
+      "medium": "fa-2x",
+      "large": "fa-4x",
+      "extra-large": "fa-5x"
+    }
+
+    return `fa fa-${iconTypes[type]} ${iconSizes[size]} icon-${this.props.color}`;
+  }
 
   render() {
     return (
-        <img
-          className={this.renderSize()}
-          src="https://s-media-cache-ak0.pinimg.com/originals/fb/38/68/fb386802e1d0f341589ec7588927b292.png" />
+        <i className={this.renderIcon()} aria-hidden="true"></i>
     )
   }
 }
 
 Icon.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  color: PropTypes.string
 }
 
 export default Icon;

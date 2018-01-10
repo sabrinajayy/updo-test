@@ -11,6 +11,7 @@ class Logo extends Component {
   render() {
     return (
         <img
+          alt="updo logo"
           className={this.renderSize()}
           src="https://s-media-cache-ak0.pinimg.com/originals/fb/38/68/fb386802e1d0f341589ec7588927b292.png" />
     )
