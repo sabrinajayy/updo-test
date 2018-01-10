@@ -5,7 +5,7 @@ import '../css/button.css';
 class Button extends Component {
 
   renderColor = () => {
-    return `btn btn-${this.props.color}`;
+    return `button btn-${this.props.color}`;
   }
 
   render() {

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Button from './components/button';
 import Logo from './components/logo';
 import Icon from './components/icon';
+import SearchBar from './components/searchbar';
+import DayPicker from 'react-day-picker';
 import { NavDropdown, MenuItem } from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -30,6 +33,13 @@ class App extends Component {
             id="nav-dropdown" noCaret>
             You have no notifications
           </NavDropdown>
+
+          <h3>Date Picker</h3>
+          <DayPicker />
+
+          <h3>Search Bars</h3>
+          <SearchBar />
+
       </div>
     );
   }
