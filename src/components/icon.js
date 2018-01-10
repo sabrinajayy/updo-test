@@ -27,7 +27,8 @@ class Icon extends Component {
       "google-plus": "google-plus-official",
       "linkedin": "linkedin-square",
       "verified": "check-circle",
-      "not-verified": "check-circle-co"
+      "not-verified": "check-circle-co",
+      "hamburger": "bars"
     }
 
     const iconSizes = {
