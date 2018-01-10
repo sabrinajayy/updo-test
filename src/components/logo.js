@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../css/logo.css';
 
-class Button extends Component {
+class Logo extends Component {
 
-  renderColor = () => {
-    return `btn btn-${this.props.color}`;
+  renderSize = () => {
+    return `logo logo-${this.props.size}`;
   }
 
   render() {
     return (
-        <button className={this.renderColor()}>{this.props.text}</button>
+        <img
+          className={this.renderSize()}
+          src="https://s-media-cache-ak0.pinimg.com/originals/fb/38/68/fb386802e1d0f341589ec7588927b292.png" />
     )
   }
 }
 
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired
+Logo.propTypes = {
+  size: PropTypes.string.isRequired
 }
 
-export default Button;
+export default Logo;
