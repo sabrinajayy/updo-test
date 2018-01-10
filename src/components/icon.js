@@ -50,7 +50,9 @@ class Icon extends Component {
 Icon.propTypes = {
   size: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
+  bsRole: PropTypes.string
 }
 
 export default Icon;
