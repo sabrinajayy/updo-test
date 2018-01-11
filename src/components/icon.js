@@ -32,6 +32,7 @@ class Icon extends Component {
     }
 
     const iconSizes = {
+      "extra-small": "icon-xsmall",
       "small": "fa-lg",
       "medium": "fa-2x",
       "large": "fa-4x",

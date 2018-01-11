@@ -31,6 +31,7 @@ class App extends Component {
           <Button text="full width" color="red" fullWidth />
 
         <h2>Icons</h2>
+          <Icon type="empty-star" size="extra-small" color="yellow" />
           <Icon type="envelope" size="small" color="black" />
           <Icon type="bell" size="medium" color="black" />
           <Icon type="pencil" size="large" color="blue" />
@@ -43,6 +44,8 @@ class App extends Component {
             id="nav-dropdown" noCaret >
             You have no notifications
           </NavDropdown>
+
+          <h3>Rating</h3>
       </div>
     )
   }
