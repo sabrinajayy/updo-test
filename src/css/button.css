@@ -18,6 +18,8 @@
   color: white;
 }
 
+.btn-full-width { width: 100%; }
+
 .btn-pink { background: #ff8791; }
 
 .btn-green { background: #32B796; }

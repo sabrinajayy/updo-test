@@ -33,7 +33,7 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  size: PropTypes.string.isRequired
+
 }
 
 export default Navbar;

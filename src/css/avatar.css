@@ -1,0 +1,11 @@
+.avatar-updo {
+  border-radius: 50%;
+  display: inline;
+  height: auto;
+}
+
+.avatar-small { width: 50px; }
+
+.avatar-medium { width: 100px; }
+
+.avatar-large { width: 200px; }
