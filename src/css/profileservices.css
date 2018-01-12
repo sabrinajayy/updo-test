@@ -1,0 +1,38 @@
+.profile-services-menu {
+  width: 350px;
+  min-height: 400px;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  -moz-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+}
+
+.profile-services-menu h2 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #757575;
+  letter-spacing: 0.6px;
+  padding-bottom: 20px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.profile-services-list-items {
+  flex-grow: 2;
+}
+
+.profile-services-list-items ul {
+  list-style-type: none;
+  padding: 15px 0px;
+}
+
+.profile-services-list-items li {
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  color: #757575;
+}
+

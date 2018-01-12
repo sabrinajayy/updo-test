@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProfileBanner from './containers/profilebanner';
-import ProfileBannerContent from './components/profilebannercontent';
+import ProfileNavbar from './components/profilenavbar';
+import ProfileServicesList from './components/profileserviceslist';
 import FrontBanner from './components/frontbanner';
 import Navbar from './components/navbar';
 import Avatar from './components/avatar';
@@ -25,9 +26,22 @@ class App extends Component {
         <Navbar />
         <FrontBanner tagline="The Salon. Anytime. Anywhere." />
         <ProfileBanner />
-
-
-        <h1>This is the Updo test</h1>
+        <ProfileNavbar />
+        <ProfileServicesList
+          stylist={{
+            firstName: "Sarah",
+            services: [{
+                name: "makeup",
+                price: 75
+              },
+              {
+                name: "special-fx makeup application",
+                price: 150
+              },
+              {
+                name: "full day wedding makeup",
+                price: 300
+              }]}} />
 
         <h2>Avatars</h2>
         <Avatar size="small" url="http://ghost.skillshub.info/content/images/2017/01/profile-girl-square.png" />

@@ -62,8 +62,9 @@
     -webkit-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
     -moz-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
     box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
-    border-left: 3px solid #ff8791;
+    border-top: 3px solid #ff8791;
     margin: 5px;
+    border-left: none;
   }
 
   .search-result-avatar {
