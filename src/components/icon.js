@@ -28,7 +28,8 @@ class Icon extends Component {
       "linkedin": "linkedin-square",
       "verified": "check-circle",
       "not-verified": "check-circle-co",
-      "hamburger": "bars"
+      "hamburger": "bars",
+      "checkmark": "check"
     }
 
     const iconSizes = {

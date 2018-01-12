@@ -1,0 +1,19 @@
+.rating-stars {
+  display: inline;
+}
+
+.rating-stars li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rating-stars i {
+  padding: 0px 3px 0px 0px;
+}
+
+.rating-number {
+  font-size: 12px;
+  font-style: italic;
+  display: inline;
+  margin: 0px;
+}

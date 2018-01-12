@@ -1,3 +1,9 @@
 body {
   background-color: #f4f4f4;
+/*  background-color: #d3d3d3;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
 }

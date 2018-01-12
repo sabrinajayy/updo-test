@@ -1,0 +1,58 @@
+.front-banner {
+  text-align: center;
+  height: calc(100vh - 75px);
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-banner-content h1 {
+  color: #fff;
+  letter-spacing: 2.5px;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-banner {
+  text-align: center;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.profile-banner-content {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.profile-banner-content__avatar {
+  padding-top: 20px;
+}
+
+.profile-banner-content__stylist h1 {
+  font-size: 2.3rem;
+  color: #474747;
+  font-weight: 400;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 10px;
+  display: inline;
+}
+
+.profile-banner-content__stylist i {
+  padding: 0px;
+}
+
+.profile-banner-content__button {
+  padding: 10px 0px 30px 0px;
+}

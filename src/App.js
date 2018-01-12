@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import ProfileBanner from './containers/profilebanner';
+import ProfileBannerContent from './components/profilebannercontent';
+import FrontBanner from './components/frontbanner';
 import Navbar from './components/navbar';
 import Avatar from './components/avatar';
 import Button from './components/button';
 import Logo from './components/logo';
 import Icon from './components/icon';
+import TagSelect from './components/tagselect';
+import Tag from './components/tag';
+import Rating from './components/rating';
+import SearchResultCard from './components/searchresultcard';
+import SortMenu from './components/sortmenu';
+import Footer from './components/footer';
 import { NavDropdown, MenuItem } from 'react-bootstrap';
 import './App.css';
 
@@ -11,8 +20,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="row">
+        <div className="col-xs-12">
         <Navbar />
+        <FrontBanner tagline="The Salon. Anytime. Anywhere." />
+        <ProfileBanner />
+
 
         <h1>This is the Updo test</h1>
 
@@ -46,6 +59,40 @@ class App extends Component {
           </NavDropdown>
 
           <h3>Rating</h3>
+          <Rating stars={5} mode="user" />
+          <Rating stars={5} mode="review" />
+
+          <h3>Clickable Tags - for profile creation and search/filters</h3>
+          <ul className="list-inline">
+            <li><TagSelect text="special-fx" /></li>
+            <li><TagSelect text="editorial" /></li>
+            <li><TagSelect text="film" /></li>
+            <li><TagSelect text="bridal" /></li>
+            <li><TagSelect text="highlights" /></li>
+          </ul>
+          <h3>Regular Tags (for artist profile, search results, gigs)</h3>
+            <ul className="list-inline">
+              <li><Tag text="special-fx" /></li>
+              <li><Tag text="editorial" /></li>
+              <li><Tag text="film" /></li>
+              <li><Tag text="bridal" /></li>
+              <li><Tag text="highlights" /></li>
+            </ul>
+
+          <h3>Sort Menu</h3>
+          <SortMenu />
+          <h3>Stylist Search Result Card</h3>
+          <SearchResultCard
+            name="Sarah Leibowitz"
+            photo="http://ghost.skillshub.info/content/images/2017/01/profile-girl-square.png"
+            rating={5}
+            city="Barcelona"
+            category="Makeup Artist"
+            tags={["special-fx", "costume", "editorial"]} />
+
+          <h3>Footer</h3>
+          <Footer />
+        </div>
       </div>
     )
   }
