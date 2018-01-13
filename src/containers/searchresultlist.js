@@ -5,21 +5,22 @@ import '../css/searchresult.css';
 
 class SearchResultList extends Component {
 
+  getSearchResultCard = () => {
+    this.props.stylists.map((stylist) =>
+      <li><SearchResultCard
+              name={stylist.name}
+              photo={stylist.profilePhotoUrl}
+              category={stylist.serviceCategory}
+              city={stylist.address.city}
+              tags={stylist.tags}
+              rating={stylist.rating} />
+      </li>
+    );
+  }
   render() {
     return (
       <div className="search-result-list" >
-        <ul>
-          {this.props.stylists.map((stylist) =>
-            <li><SearchResultCard
-                    name={stylist.name}
-                    photo={stylist.profilePhotoUrl}
-                    category={stylist.serviceCategory}
-                    city={stylist.address.city}
-                    tags={stylist.tags}
-                    rating={stylist.rating} />
-            </li>
-          )}
-        </ul>
+        <ul>{this.getSearchResultCard()}</ul>
       </div>
     );
   }

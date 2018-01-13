@@ -1,0 +1,27 @@
+.profile-about__content {
+  color: #757575;
+}
+
+.profile-about__content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.profile-about__bio, .profile-about__tags {
+  padding-bottom: 10px;
+}
+
+.profile-about__bio p {
+  letter-spacing: 0.3px;
+}
+
+.profile-about__tags h2 {
+  padding-bottom: 5px;
+}
+
+.profile-about__licences ul {
+  list-style-type: none;
+  padding-left: 0px;
+}

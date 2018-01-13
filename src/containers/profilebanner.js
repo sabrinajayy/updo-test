@@ -9,8 +9,8 @@ class ProfileBanner extends Component {
     return (
       <div className="profile-banner" >
        <ProfileBannerContent
-            name="Sarah Leibowitz" //would be this.props.stylist.fullName
-            rating={5} //this.props.stylist.rating
+            name={this.props.stylist.firstName}
+            rating={this.props.stylist.rating}
             photo="http://ghost.skillshub.info/content/images/2017/01/profile-girl-square.png" />
       </div>
     );
@@ -18,7 +18,7 @@ class ProfileBanner extends Component {
 }
 
 ProfileBanner.propTypes = {
-  stylist: PropTypes.string.isRequired //it should really be PropTypes.object.isRequired
+  stylist: PropTypes.object.isRequired
 }
 
 export default ProfileBanner;

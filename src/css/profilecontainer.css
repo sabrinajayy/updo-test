@@ -1,0 +1,13 @@
+.profile-section-container {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-section-container {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+  }
+}

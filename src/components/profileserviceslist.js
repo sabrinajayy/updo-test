@@ -11,13 +11,13 @@ class ProfileServicesList extends Component {
         <h2>Services</h2>
         <div className="profile-services-list-items">
           <ul>
-            {this.props.stylist.services.map((service) =>
+            {this.props.services.map((service) =>
               <li>{service.name} - <strong>${service.price}</strong></li>
             )}
           </ul>
         </div>
         <div className="profile-services-list-button">
-          <Button text={`Request ${this.props.stylist.firstName}`} color="pink" fullWidth />
+          <Button text={`Request Stylist`} color="pink" fullWidth />
         </div>
       </div>
     );
@@ -25,7 +25,7 @@ class ProfileServicesList extends Component {
 }
 
 ProfileServicesList.propTypes = {
-  stylist: PropTypes.object.isRequired
+  services: PropTypes.array.isRequired
 }
 
 export default ProfileServicesList;

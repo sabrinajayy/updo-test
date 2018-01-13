@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ProfileBanner from './containers/profilebanner';
-import ProfileNavbar from './components/profilenavbar';
-import ProfileServicesList from './components/profileserviceslist';
+import ProfileContainer from './containers/profilecontainer';
 import FrontBanner from './components/frontbanner';
 import Navbar from './components/navbar';
 import Avatar from './components/avatar';
@@ -25,23 +23,14 @@ class App extends Component {
         <div className="col-xs-12">
         <Navbar />
         <FrontBanner tagline="The Salon. Anytime. Anywhere." />
-        <ProfileBanner />
-        <ProfileNavbar />
-        <ProfileServicesList
-          stylist={{
-            firstName: "Sarah",
-            services: [{
-                name: "makeup",
-                price: 75
-              },
-              {
-                name: "special-fx makeup application",
-                price: 150
-              },
-              {
-                name: "full day wedding makeup",
-                price: 300
-              }]}} />
+        <ProfileContainer stylist={{
+            "firstName": "Sarah",
+            "tags": ["special-fx", "costume", "editorial", "bridal", "photoshoot", "prom makeup", "smokey eye", "body painting", "gothic", "hollywood glam"],
+            "services": [{"name": "special-fx", "price": 75}, {"name": "makeup application", "price": 100}],
+            "certifications": [{"title": "Cosmetology Licence", "grantor": "State of New York"}],
+            "bio": "A makeup artist with more than ten years’ experience in the areas of fashion, creative studio, bridal and makeup education, Erin has learnt from her clients one universal rule: women want to look fresh, flawless and beautiful. It’s this principle that drives a signature style that is feminine and natural, yet in keeping with modern style inspiration drawn from her many creative sources, from the world’s best fashion magazines to time out at the beach with her young daughter."
+          }
+        } />
 
         <h2>Avatars</h2>
         <Avatar size="small" url="http://ghost.skillshub.info/content/images/2017/01/profile-girl-square.png" />

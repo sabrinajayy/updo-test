@@ -16,10 +16,6 @@
   padding: 10px 30px;
 }
 
-.profile-navitem-list {
-/*  width: 600px;*/
-}
-
 .profile-navitem {
   flex-shrink: 0;
 }
