@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '../components/avatar'
 import Rating from '../components/rating'
-import Button from '../components/button'
+import OurButton from '../components/button'
 import TagList from '../containers/taglist';
 import '../css/searchresult.css';
 
@@ -21,7 +21,7 @@ class SearchResultCard extends Component {
           <TagList tags={this.props.tags} />
         </div>
         <div className="search-result-button">
-          <Button text="request" color="pink" fullWidth />
+          <OurButton text="request" color="pink" fullWidth />
         </div>
       </div>
     );

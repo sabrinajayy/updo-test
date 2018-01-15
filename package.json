@@ -4,10 +4,14 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "material-ui": "^1.0.0-beta.28",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.0",
     "react-day-picker": "^7.0.7",
     "react-dom": "^16.2.0",
+    "react-images": "^0.5.14",
+    "react-photo-gallery": "^6.0.22",
+    "react-responsive-modal": "^2.0.0",
     "react-scripts": "1.0.17",
     "webfontloader": "^1.6.28"
   },

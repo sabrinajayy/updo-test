@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../css/button.css';
 
-class Button extends Component {
+class OurButton extends Component {
 
   renderButtonClasses = () => {
 
@@ -20,10 +20,11 @@ class Button extends Component {
   }
 }
 
-Button.propTypes = {
+OurButton.propTypes = {
   text: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  fullWidth: PropTypes.bool
+  fullWidth: PropTypes.bool,
+  onClick: PropTypes.func.isRequired
 }
 
-export default Button;
+export default OurButton;

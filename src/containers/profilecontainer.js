@@ -6,13 +6,26 @@ import ProfileBanner from '../containers/profilebanner';
 import '../css/profilecontainer.css';
 
 class ProfileContainer extends Component {
+  constructor() {
+    super();
+
+    this.state = { currentSection: "reviews" };
+  }
+
+  toggleSectionAt = (section) => {
+    this.setState({ currentSection: section });
+  }
+
 
   render() {
     return (
       <div className="profile-container">
         <ProfileBanner stylist={this.props.stylist} />
-        <ProfileNavbar />
-        <ProfileSectionContainer stylist={this.props.stylist} />
+        <ProfileNavbar
+          currentTab={this.state.currentSection} />
+        <ProfileSectionContainer
+          stylist={this.props.stylist}
+          section={this.state.currentSection} />
       </div>
     )
   }

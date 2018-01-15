@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Logo from '../components/logo';
 import SearchBar from '../components/searchbar';
-import Button from '../components/button';
+import OurButton from '../components/button';
 import Icon from '../components/icon';
 import '../css/navbar.css';
 
@@ -22,7 +22,7 @@ class Navbar extends Component {
         </div>
         <div className="navbar-right hidden-xs">
           <p className="navbar-login">LOG IN</p>
-          <Button text="Sign up" color="pink" />
+          <OurButton text="Sign up" color="pink" />
         </div>
         <div className="navbar-right-mobile hidden-xl hidden-lg hidden-sm">
           <Icon type="hamburger" size="small" color="pink" />

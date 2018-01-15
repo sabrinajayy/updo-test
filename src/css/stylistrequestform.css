@@ -1,0 +1,9 @@
+.stylist-request-form {
+  font-size: 16px;
+  width: 100%;
+}
+
+.stylist-request-form__date {
+  width: 50%;
+  padding-top: 10px;
+}

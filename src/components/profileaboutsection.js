@@ -31,7 +31,9 @@ class ProfileAboutSection extends Component {
         </div>
         <div className="col-xs-12 col-sm-5">
           <div className="profile-about__services">
-            <ProfileServicesList services={this.props.stylist.services} />
+            <ProfileServicesList
+              services={this.props.stylist.services}
+              name={this.props.stylist.firstName} />
           </div>
         </div>
       </div>

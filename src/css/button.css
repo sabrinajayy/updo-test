@@ -30,5 +30,16 @@
 
 .btn-grey { background: #757575; }
 
+.btn-naked-grey {
+  color: #757575;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  border-width: 0;
+  height: 50px;
+}
+
 
 

@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import '../css/profilenavbar.css';
 
 class ProfileNavbar extends Component {
+  constructor() {
+    super();
+    this.state = { currentSection: "about" };
+  }
+
 
   render() {
     return (
@@ -24,7 +29,8 @@ class ProfileNavbar extends Component {
 }
 
 ProfileNavbar.propTypes = {
-  onSelect: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+
 }
 
 export default ProfileNavbar;
