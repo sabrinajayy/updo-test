@@ -1,0 +1,91 @@
+.message-container {
+
+}
+
+.message-text-container {
+  margin: 10px 0px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgba(117,117,117,0.1);
+  padding: 20px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.message-sender {
+  background-color: #f4f4f4;
+}
+
+.message-date {
+  color: #757575;
+  text-align: right;
+  font-size: 12px;
+}
+
+.message-avatar {
+  padding: 0px;
+}
+
+.message-avatar-left {
+  text-align: right;
+}
+
+/*for sending messages (avatar on right) */
+.tri-right.msg-border.right-top:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -40px;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: 0px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: white transparent transparent transparent;
+}
+
+.msg-border{
+  border: 8px solid #757575;
+}
+
+/*for receiving messages (avatar on left side) */
+.tri-right.border.left-top:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  right: auto;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 22px solid;
+  border-color: lightyellow transparent transparent transparent;
+}

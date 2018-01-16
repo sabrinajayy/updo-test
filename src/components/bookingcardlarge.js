@@ -56,7 +56,7 @@ class BookingCardLarge extends Component {
         );
       }
     } else {
-      return <OurButton text="cancel" color="naked-grey" />;
+      return <OurButton text="cancel" color="grey" />;
     }
   }
 

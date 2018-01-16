@@ -9,7 +9,7 @@ class ProfileContainer extends Component {
   constructor() {
     super();
 
-    this.state = { currentSection: "reviews" };
+    this.state = { currentSection: "about" };
   }
 
   toggleSectionAt = (section) => {

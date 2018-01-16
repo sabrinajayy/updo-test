@@ -3,7 +3,7 @@ import ProfileContainer from './containers/profilecontainer';
 import Navbar from './components/navbar';
 import ReviewList from './components/reviewlist';
 import NotificationBadge from './components/notificationbadge';
-import BookingCardLarge from './components/bookingcardlarge';
+import BookingContainer from './containers/bookingcontainer';
 import Footer from './components/footer';
 import './App.css';
 
@@ -66,23 +66,8 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
         <Navbar />
-        <ProfileContainer
-            section="about"
-            stylist={STYLIST} />
-          <NotificationBadge amount={15} iconType="envelope" iconColor="pink" />
-          <NotificationBadge amount={3} iconType="bell" iconColor="pink" />
-          <BookingCardLarge
-            userType="client"
-            date="12 Feb 2018"
-            time="4:00pm"
-            duration="2 hours"
-            address="123 Fake Street, Toronto, ON  M6K 3A5"
-            service="Makeup Application"
-            price={100}
-            status="unconfirmed"
-            stylist={STYLIST}
-            client={CLIENT}
-            terms={STYLIST.terms} />
+          <BookingContainer booking={BOOKING} />
+          <ProfileContainer stylist={STYLIST} />
           <Footer />
         </div>
       </div>
