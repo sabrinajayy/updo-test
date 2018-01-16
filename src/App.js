@@ -57,7 +57,40 @@ const BOOKING = {
   price: 100,
   status: "unconfirmed",
   stylist: STYLIST,
-  client: CLIENT
+  client: CLIENT,
+  messages: [{
+      name: CLIENT.firstName,
+      date: "12 Jan 2018",
+      time: "6:04pm",
+      content: "what's up?",
+      photo: CLIENT.profilePhotoUrl,
+      isSender: true
+    },
+    {
+      name: STYLIST.firstName,
+      date: "12 Jan 2018",
+      time: "6:12pm",
+      content: "not mucuh you?",
+      photo: STYLIST.profilePhotoUrl,
+      isSender: false
+    },
+    {
+      name: CLIENT.firstName,
+      date: "12 Jan 2018",
+      time: "6:30pm",
+      content: "are you on the way?",
+      photo: CLIENT.profilePhotoUrl,
+      isSender: true
+    },
+     {
+      name: STYLIST.firstName,
+      date: "12 Jan 2018",
+      time: "6:35pm",
+      content: "in traffic!",
+      photo: STYLIST.profilePhotoUrl,
+      isSender: false
+    }
+  ]
 }
 
 class App extends Component {
@@ -67,7 +100,6 @@ class App extends Component {
         <div className="col-xs-12">
         <Navbar />
           <BookingContainer booking={BOOKING} />
-          <ProfileContainer stylist={STYLIST} />
           <Footer />
         </div>
       </div>

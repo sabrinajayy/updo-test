@@ -11,7 +11,7 @@ class Message extends Component {
           <div className="row">
             <div className="col-xs-9 col-lg-10">
               <div className="message-text-container tri-right right-top message-sender">
-                <p>This is a test message from a user to another user about a booking that is happening next week.</p>
+                <p>{this.props.content}</p>
                 <p className="message-date">{this.props.date}, {this.props.time}</p>
               </div>
             </div>
@@ -34,8 +34,8 @@ class Message extends Component {
           </div>
           <div className="col-xs-9 col-lg-10">
             <div className="message-text-container tri-right left-top">
-              <p>This is a test message from a user to another user about a booking that is happening next week.</p>
-              <p className="message-date">{this.props.date}, {this.props.time}</p>
+              <p>{this.props.content}</p>
+              <p className="message-date">{this.props.date}, {this.props.time} - {this.props.name}</p>
             </div>
           </div>
         </div>
@@ -53,7 +53,8 @@ Message.propTypes = {
   date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired
+  photo: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired
 }
 
 export default Message;

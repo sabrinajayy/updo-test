@@ -1,5 +1,15 @@
-.message-container {
+.messages-list {
+  height: 80vh;
+  width: 100%;
+  margin: 5px 10px;
+}
+.messages-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
 
+.messages-list ul li {
+  margin: 20px 0px;
 }
 
 .message-text-container {
@@ -16,13 +26,9 @@
   -webkit-margin-after: 0em;
 }
 
-.message-sender {
-  background-color: #f4f4f4;
-}
-
 .message-date {
   color: #757575;
-  text-align: right;
+  text-align: left;
   font-size: 12px;
 }
 
@@ -88,4 +94,21 @@
   bottom: auto;
   border: 22px solid;
   border-color: lightyellow transparent transparent transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .message-text-container {
+    margin: 10px 0px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid rgba(117,117,117,0.1);
+    padding: 10px 20px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+
 }

@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BookingCardLarge from '../components/bookingcardlarge';
-import Message from '../components/message';
+import MessagesList from '../components/messageslist';
 import '../css/bookingcard.css';
 
 class BookingContainer extends Component {
+  state = {
+    clientType: "client"
+  }
 
   render() {
     return (
@@ -12,7 +15,7 @@ class BookingContainer extends Component {
         <div className="row">
           <div className="col-xs-12 col-sm-5">
             <BookingCardLarge
-              userType="client"
+              userType={this.state.clientType}
               date={this.props.booking.date}
               time={this.props.booking.time}
               duration={this.props.booking.duration}
@@ -25,11 +28,7 @@ class BookingContainer extends Component {
               terms={this.props.booking.stylist.terms} />
           </div>
           <div className="col-xs-12 col-sm-7">
-            <Message
-              date="15 jan 2018"
-              time="6:04pm"
-              name="Angelo Cervantes"
-              photo={this.props.booking.stylist.profilePhotoUrl} />
+            <MessagesList messages={this.props.booking.messages} />
           </div>
         </div>
       </div>
