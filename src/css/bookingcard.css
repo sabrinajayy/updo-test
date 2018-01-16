@@ -1,0 +1,48 @@
+.booking-card-large {
+  text-align: center;
+  color: #444444;
+  padding: 60px 15px 90px 15px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  -moz-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  margin: 10px;
+}
+
+.booking-card-large h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.booking-card__details h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 30px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.booking-card__details h3 {
+  margin: 5px 0px 30px 0px;
+}
+
+.booking-card__link {
+  cursor: pointer;
+}
+
+.booking-card__link:hover {
+  text-decoration: underline;
+}
+
+.booking-card__actions {
+  margin: 30px 0px 0px 0px;
+}
+
+.booking-card__actions h4 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 600;
+}

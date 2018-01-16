@@ -29,7 +29,9 @@ class Icon extends Component {
       "verified": "check-circle",
       "not-verified": "check-circle-co",
       "hamburger": "bars",
-      "checkmark": "check"
+      "checkmark": "check",
+      "phone": "phone",
+      "document": "file-text-o"
     }
 
     const iconSizes = {

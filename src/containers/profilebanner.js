@@ -11,7 +11,7 @@ class ProfileBanner extends Component {
        <ProfileBannerContent
             name={this.props.stylist.firstName}
             rating={this.props.stylist.rating}
-            photo="http://ghost.skillshub.info/content/images/2017/01/profile-girl-square.png"
+            photo={this.props.stylist.profilePhotoUrl}
             services={this.props.stylist.services} />
       </div>
     );
