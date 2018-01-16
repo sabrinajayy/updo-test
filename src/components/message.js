@@ -17,7 +17,7 @@ class Message extends Component {
             </div>
             <div className="col-xs-3 col-lg-2">
               <div className="message-avatar">
-                <Avatar size="small" url={this.props.photo} />
+                <Avatar size="xsmall" url={this.props.photo} />
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ class Message extends Component {
         <div className="row">
           <div className="col-xs-3 col-lg-2">
             <div className="message-avatar-left">
-              <Avatar size="small" url={this.props.photo} />
+              <Avatar size="xsmall" url={this.props.photo} />
             </div>
           </div>
           <div className="col-xs-9 col-lg-10">

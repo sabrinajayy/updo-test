@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ProfileContainer from './containers/profilecontainer';
 import Navbar from './components/navbar';
-import ReviewList from './components/reviewlist';
-import NotificationBadge from './components/notificationbadge';
+import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
 import Footer from './components/footer';
 import './App.css';
@@ -99,7 +97,7 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
         <Navbar />
-          <BookingContainer booking={BOOKING} />
+          <BookingContainer booking={BOOKING} currentUser={BOOKING.stylist} />
           <Footer />
         </div>
       </div>

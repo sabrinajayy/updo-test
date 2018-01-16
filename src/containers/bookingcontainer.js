@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BookingCardLarge from '../components/bookingcardlarge';
+import MessageForm from '../components/messageform';
 import MessagesList from '../components/messageslist';
 import '../css/bookingcard.css';
 
@@ -28,6 +29,7 @@ class BookingContainer extends Component {
               terms={this.props.booking.stylist.terms} />
           </div>
           <div className="col-xs-12 col-sm-7">
+            <MessageForm user={this.props.currentUser} />
             <MessagesList messages={this.props.booking.messages} />
           </div>
         </div>
@@ -37,7 +39,8 @@ class BookingContainer extends Component {
 }
 
 BookingContainer.propTypes = {
-  booking: PropTypes.object.isRequired
+  booking: PropTypes.object.isRequired,
+  currentUser: PropTypes.object.isRequired
 }
 
 export default BookingContainer;

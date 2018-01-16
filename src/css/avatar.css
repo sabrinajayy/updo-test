@@ -4,7 +4,9 @@
   height: auto;
 }
 
-.avatar-small { width: 50px; }
+.avatar-xsmall { width: 50px; }
+
+.avatar-small { width: 70px; }
 
 .avatar-medium { width: 120px; }
 

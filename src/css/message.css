@@ -1,5 +1,24 @@
+.message-form {
+  margin: 10px 5px;
+}
+
+.message-input {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgba(117,117,117,0.2);
+  padding: 10px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.message-form input[type=submit] {
+  float: right;
+}
+
 .messages-list {
-  height: 80vh;
   width: 100%;
   margin: 5px 10px;
 }
@@ -20,7 +39,7 @@
   height: auto;
   background-color: white;
   border-radius: 2px;
-  border: 1px solid rgba(117,117,117,0.1);
+  border: 1px solid rgba(117,117,117,0.2);
   padding: 20px;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;

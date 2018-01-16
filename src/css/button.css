@@ -33,13 +33,21 @@
 .btn-naked-grey {
   color: #757575;
   background: transparent;
-  border: none;
-  font-weight: bold;
+  border: 1px solid rgba(117,117,117,0.5);
+  font-weight: 400;
+  letter-spacing: 0.8px;
   transition: background 0.3s ease;
   text-transform: uppercase;
-  border-width: 0;
-  height: 50px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
 }
 
+.btn-naked-grey:hover {
+  color: white;
+  background-color: rgba(117,117,117,0.5);
+  border: none;
+}
 
 
