@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Navbar from './components/navbar';
 import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
+import InboxContainer from './containers/inboxcontainer';
 import Footer from './components/footer';
-import InboxMessageCard from './components/inboxmessagecard';
+
 import './App.css';
 
 const STYLIST = {
@@ -64,7 +65,9 @@ const BOOKING = {
       content: "what's up?",
       photo: CLIENT.profilePhotoUrl,
       isSender: true,
-      isUnread: false
+      isUnread: false,
+      bookingDate: "12 Feb 2018",
+      bookingService: "Makeup Application"
     },
     {
       name: STYLIST.firstName,
@@ -73,7 +76,9 @@ const BOOKING = {
       content: "not mucuh you?",
       photo: STYLIST.profilePhotoUrl,
       isSender: false,
-      isUnread: false
+      isUnread: false,
+      bookingDate: "12 Feb 2018",
+      bookingService: "Makeup Application"
     },
     {
       name: CLIENT.firstName,
@@ -82,7 +87,9 @@ const BOOKING = {
       content: "are you on the way?",
       photo: CLIENT.profilePhotoUrl,
       isSender: true,
-      isUnread: false
+      isUnread: false,
+      bookingDate: "12 Feb 2018",
+      bookingService: "Makeup Application"
     },
      {
       name: STYLIST.firstName,
@@ -91,7 +98,9 @@ const BOOKING = {
       content: "in traffic!",
       photo: STYLIST.profilePhotoUrl,
       isSender: false,
-      isUnread: true
+      isUnread: true,
+      bookingDate: "12 Feb 2018",
+      bookingService: "Makeup Application"
     }
   ]
 }
@@ -101,16 +110,8 @@ class App extends Component {
     return (
       <div className="row">
         <div className="col-xs-12">
-        <Navbar />
-          <BookingContainer booking={BOOKING} currentUser={BOOKING.client} />
-          <InboxMessageCard
-            sender="Bruce Wayne"
-            senderPhoto={CLIENT.profilePhotoUrl}
-            previewText={BOOKING.messages[0].content}
-            bookingDate={BOOKING.date}
-            bookingService={BOOKING.service}
-            messageDate={BOOKING.messages[0].date}
-            isUnread={true} />
+          <Navbar />
+          <InboxContainer userMessages={BOOKING.messages} />
           <Footer />
         </div>
       </div>
