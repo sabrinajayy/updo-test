@@ -28,6 +28,11 @@
   margin: 5px;
 }
 
+.inbox-message-card:hover {
+  border: 2px solid pink;
+  box-shadow: none;
+}
+
 .unread-message {
   font-weight: bold !important;
 }
