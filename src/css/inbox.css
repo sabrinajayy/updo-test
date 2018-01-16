@@ -15,7 +15,7 @@
 }
 
 .unread-message {
-  font-weight: bolder !important;
+  font-weight: bold !important;
 }
 
 .inbox-message-avatar {
@@ -26,18 +26,19 @@
 
 .inbox-message-details {
   color: #757575;
-  min-width: 500px;
+  width: 500px;
   align-self: center;
 }
 
 .inbox-message-details h2 {
   font-size: 16px;
-  margin: 5px 10px 10px 0px;
+  margin: 5px 10px 5px 0px;
 }
 
 .inbox-message-preview {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .inbox-message-booking {
@@ -46,7 +47,7 @@
 
 .inbox-message-date {
   color: #757575;
-  flex-shrink: 0;
+  flex-shrink: 1;
   align-self: right;
   padding: 10px 10px 0px 0px;
 }
@@ -61,7 +62,7 @@
   }
 
   .inbox-message-details h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
  .inbox-message-preview {
@@ -71,11 +72,12 @@
 
   .inbox-message-booking {
     font-style: italic;
-    font-size: 12px;
+    font-size: 10px;
   }
   .inbox-message-date {
-    flex-wrap: auto;
     width: auto;
+    font-size: 12px;
+    padding: 10px 0px 0px 0px;
   }
 
 
