@@ -7,7 +7,7 @@ import '../css/bookingcard.css';
 
 class BookingContainer extends Component {
   state = {
-    clientType: "client"
+    clientType: "stylist"
   }
 
   render() {

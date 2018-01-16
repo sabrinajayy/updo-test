@@ -1,0 +1,82 @@
+.inbox-message-card {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  width: auto;
+  height: 120px;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  -moz-box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  box-shadow: 0px 2px 8px -3px rgba(117,117,117,1);
+  margin: 5px;
+}
+
+.unread-message {
+  font-weight: bolder !important;
+}
+
+.inbox-message-avatar {
+  align-self: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.inbox-message-details {
+  color: #757575;
+  min-width: 500px;
+  align-self: center;
+}
+
+.inbox-message-details h2 {
+  font-size: 16px;
+  margin: 5px 10px 10px 0px;
+}
+
+.inbox-message-preview {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.inbox-message-booking {
+  font-style: italic;
+}
+
+.inbox-message-date {
+  color: #757575;
+  flex-shrink: 0;
+  align-self: right;
+  padding: 10px 10px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .inbox-message-details {
+    color: #757575;
+    align-self: center;
+    margin: 0px 15px;
+    width: auto;
+  }
+
+  .inbox-message-details h2 {
+    font-size: 16px;
+  }
+
+ .inbox-message-preview {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+
+  .inbox-message-booking {
+    font-style: italic;
+    font-size: 12px;
+  }
+  .inbox-message-date {
+    flex-wrap: auto;
+    width: auto;
+  }
+
+
+}

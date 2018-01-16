@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
 import Footer from './components/footer';
+import InboxMessageCard from './components/inboxmessagecard';
 import './App.css';
 
 const STYLIST = {
@@ -62,7 +63,8 @@ const BOOKING = {
       time: "6:04pm",
       content: "what's up?",
       photo: CLIENT.profilePhotoUrl,
-      isSender: true
+      isSender: true,
+      isUnread: false
     },
     {
       name: STYLIST.firstName,
@@ -70,7 +72,8 @@ const BOOKING = {
       time: "6:12pm",
       content: "not mucuh you?",
       photo: STYLIST.profilePhotoUrl,
-      isSender: false
+      isSender: false,
+      isUnread: false
     },
     {
       name: CLIENT.firstName,
@@ -78,7 +81,8 @@ const BOOKING = {
       time: "6:30pm",
       content: "are you on the way?",
       photo: CLIENT.profilePhotoUrl,
-      isSender: true
+      isSender: true,
+      isUnread: false
     },
      {
       name: STYLIST.firstName,
@@ -86,7 +90,8 @@ const BOOKING = {
       time: "6:35pm",
       content: "in traffic!",
       photo: STYLIST.profilePhotoUrl,
-      isSender: false
+      isSender: false,
+      isUnread: true
     }
   ]
 }
@@ -97,7 +102,15 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
         <Navbar />
-          <BookingContainer booking={BOOKING} currentUser={BOOKING.stylist} />
+          <BookingContainer booking={BOOKING} currentUser={BOOKING.client} />
+          <InboxMessageCard
+            sender="Bruce Wayne"
+            senderPhoto={CLIENT.profilePhotoUrl}
+            previewText={BOOKING.messages[0].content}
+            bookingDate={BOOKING.date}
+            bookingService={BOOKING.service}
+            messageDate={BOOKING.messages[0].date}
+            isUnread={true} />
           <Footer />
         </div>
       </div>
