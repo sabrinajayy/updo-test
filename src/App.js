@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
 import InboxContainer from './containers/inboxcontainer';
+import GigSearchResultCard from './components/gigsearchresultcard';
 import Footer from './components/footer';
 
 import './App.css';
@@ -111,6 +112,7 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
           <Navbar />
+          <GigSearchResultCard />
           <InboxContainer userMessages={BOOKING.messages} />
           <Footer />
         </div>
