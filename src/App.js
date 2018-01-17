@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import Navbar from './components/navbar';
 import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
