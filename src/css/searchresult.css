@@ -1,5 +1,5 @@
 .search-result-card {
-  padding: 10px 15px 20px 15px;
+  padding: 10px 15px 10px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,10 +42,40 @@
 }
 
 .sort-menu-button {
-  color: #757575;
-  background-color: white;
-  border: 0.8 solid #757575;
   border-radius: 3px;
+  }
+
+/*GIG SEARCH RESULT CARD*/
+.search-result-avatar__gig {
+  align-self: center;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.search-results-details__gig {
+  min-width: 300px;
+  font-size: 10px;
+}
+
+.search-result-details__gig h2 {
+  font-size: 14px;
+  margin: 5px 10px 5px 0px;
+  font-weight: 600;
+}
+
+.search-result-details__gig-description {
+  margin-bottom: 5px;
+}
+
+.search-result-details__gig-budget {
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.search-result-details__gig-date {
+  margin-bottom: 0px;
+  font-style: italic;
 }
 
 @media screen and (max-width: 768px) {

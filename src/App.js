@@ -115,7 +115,16 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
           <Navbar />
-          <GigSearchResultCard />
+          <GigSearchResultCard
+            title="Magazine Photoshoot for 3 Models"
+            description="We need a makeup artist for a a photoshoot happening this Friday at a studio. We start at 10am models need to be ready for 1. Let me know your quotes"
+            budget={200}
+            address={{number: 123, street: "Fake St", city: "Toronto", province: "Ontario", postalCode: "L4C3R6"}}
+            date="14 Feb 2018"
+            time="10:00am"
+            duration="3 hours"
+            tags={["editorial", "high fashion"]}
+            photo={CLIENT.profilePhotoUrl} />
           <InboxContainer userMessages={BOOKING.messages} />
           <Footer />
         </div>
