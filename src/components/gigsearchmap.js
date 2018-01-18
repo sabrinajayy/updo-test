@@ -18,9 +18,8 @@ class GigSearchMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}>
           <SearchMapMarker
-            lat={59.955413}
-            lng={30.337844}
-            text="A"/>
+            lat={43.645276}
+            lng={-79.395467} />
         </GoogleMapReact>
       </div>
     );

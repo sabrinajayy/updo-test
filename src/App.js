@@ -6,8 +6,8 @@ import Navbar from './components/navbar';
 import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
 import InboxContainer from './containers/inboxcontainer';
-import GigSearchResultList from './components/gigsearchresultlist';
-import GigSearchMap from './components/gigsearchmap';
+import GigSearchResultsContainer from './containers/gigsearchresultscontainer';
+import GigQuoteForm from './components/gigquoteform';
 import Footer from './components/footer';
 
 import './App.css';
@@ -155,6 +155,50 @@ const GIGS = [
     tags: ["editorial", "high fashion"],
     photo: CLIENT.profilePhotoUrl
   },
+      {
+    title: "Birthday Makeup for 4 Girls",
+    description: "We need a makeup artist for a a photoshoot happening this Friday at a studio. We start at 10am models need to be ready for 1. Let me know your quotes",
+    budget: 200,
+    address: {number: 123, street: "Fake St", city: "Toronto", province: "Ontario", postalCode: "L4C3R6"},
+    date: "14 Feb 2018",
+    time: "10:00am",
+    duration: "3 hours",
+    tags: ["editorial", "high fashion"],
+    photo: CLIENT.profilePhotoUrl
+  },
+    {
+    title: "All Day Makeup for 4 Models at Shoot",
+    description: "We need a makeup artist for a a photoshoot happening this Friday at a studio. We start at 10am models need to be ready for 1. Let me know your quotes",
+    budget: 200,
+    address: {number: 123, street: "Fake St", city: "Toronto", province: "Ontario", postalCode: "L4C3R6"},
+    date: "14 Feb 2018",
+    time: "10:00am",
+    duration: "3 hours",
+    tags: ["editorial", "high fashion"],
+    photo: CLIENT.profilePhotoUrl
+  },
+      {
+    title: "Birthday Makeup for 4 Girls",
+    description: "We need a makeup artist for a a photoshoot happening this Friday at a studio. We start at 10am models need to be ready for 1. Let me know your quotes",
+    budget: 200,
+    address: {number: 123, street: "Fake St", city: "Toronto", province: "Ontario", postalCode: "L4C3R6"},
+    date: "14 Feb 2018",
+    time: "10:00am",
+    duration: "3 hours",
+    tags: ["editorial", "high fashion"],
+    photo: CLIENT.profilePhotoUrl
+  },
+    {
+    title: "All Day Makeup for 4 Models at Shoot",
+    description: "We need a makeup artist for a a photoshoot happening this Friday at a studio. We start at 10am models need to be ready for 1. Let me know your quotes",
+    budget: 200,
+    address: {number: 123, street: "Fake St", city: "Toronto", province: "Ontario", postalCode: "L4C3R6"},
+    date: "14 Feb 2018",
+    time: "10:00am",
+    duration: "3 hours",
+    tags: ["editorial", "high fashion"],
+    photo: CLIENT.profilePhotoUrl
+  }
 ];
 
 class App extends Component {
@@ -163,8 +207,7 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
           <Navbar />
-          <GigSearchResultList gigs={GIGS} />
-          <GigSearchMap />
+          <GigQuoteForm terms={["wedding contract", "photoshoot contract"]} />
           <Footer />
         </div>
       </div>
