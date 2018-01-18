@@ -20,14 +20,14 @@ class GigQuoteForm extends Component {
           <FormGroup>
             <SplitButton
               bsStyle="Default"
-              title="Contract"
+              title="Choose Contract"
               key="test"
               id="test"
               className="quote-form-dropdown"
             >
-            {this.props.terms.map((contract, index) =>
-              <MenuItem eventKey={index}>{contract}</MenuItem>
-              )}
+            <MenuItem eventKey={1}>Wedding Contract</MenuItem>
+            <MenuItem eventKey={2}>PhotoShoot Contract</MenuItem>
+
             </SplitButton>
           </FormGroup>
           <FormGroup>

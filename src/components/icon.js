@@ -31,7 +31,8 @@ class Icon extends Component {
       "hamburger": "bars",
       "checkmark": "check",
       "phone": "phone",
-      "document": "file-text-o"
+      "document": "file-text-o",
+      "x": "times"
     }
 
     const iconSizes = {
@@ -56,8 +57,7 @@ Icon.propTypes = {
   size: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   color: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
-  bsRole: PropTypes.string
+  onClick: PropTypes.func.isRequired
 }
 
 export default Icon;

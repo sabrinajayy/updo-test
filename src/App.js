@@ -207,7 +207,7 @@ class App extends Component {
       <div className="row">
         <div className="col-xs-12">
           <Navbar />
-          <GigQuoteForm terms={["wedding contract", "photoshoot contract"]} />
+          <GigSearchResultsContainer gigs={GIGS} />
           <Footer />
         </div>
       </div>
