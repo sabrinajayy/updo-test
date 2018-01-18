@@ -46,6 +46,11 @@
   }
 
 /*GIG SEARCH RESULT CARD*/
+.gig-search-result-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 .search-result-avatar__gig {
   align-self: center;
   width: 140px;
