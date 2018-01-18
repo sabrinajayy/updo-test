@@ -7,6 +7,7 @@ import ProfileContainer from './containers/profilecontainer';
 import BookingContainer from './containers/bookingcontainer';
 import InboxContainer from './containers/inboxcontainer';
 import GigSearchResultList from './components/gigsearchresultlist';
+import GigSearchMap from './components/gigsearchmap';
 import Footer from './components/footer';
 
 import './App.css';
@@ -163,6 +164,7 @@ class App extends Component {
         <div className="col-xs-12">
           <Navbar />
           <GigSearchResultList gigs={GIGS} />
+          <GigSearchMap />
           <Footer />
         </div>
       </div>
